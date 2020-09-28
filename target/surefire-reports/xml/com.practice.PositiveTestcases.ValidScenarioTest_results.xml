@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Search page(valid) Test"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="23.590">
+  <properties />
+  
+  
+            <testcase name="seletOneWayTest" time="2.133" classname="com.practice.PositiveTestcases.ValidScenarioTest" />
+                <testcase name="clickSearchTest" time="13.347" classname="com.practice.PositiveTestcases.ValidScenarioTest" />
+                <testcase name="selectFromAndTOCityTest" time="5.551" classname="com.practice.PositiveTestcases.ValidScenarioTest" />
+                <testcase name="selectDateTest" time="2.559" classname="com.practice.PositiveTestcases.ValidScenarioTest" />
+      
+</testsuite>

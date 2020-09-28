@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Clear_Trip_Project_Suite">
+              <span class="suite-name border-failed">Clear Trip Project Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Clear_Trip_Project_Suite">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Clear_Trip_Project_Suite">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Clear_Trip_Project_Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Clear_Trip_Project_Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Clear_Trip_Project_Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Clear_Trip_Project_Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Clear_Trip_Project_Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">8 methods, 2 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Clear_Trip_Project_Suite" class="hide-methods failed suite-Clear_Trip_Project_Suite"> (hide)</a> <!-- hide-methods failed suite-Clear_Trip_Project_Suite -->
+                      <a href="#" panel-name="suite-Clear_Trip_Project_Suite" class="show-methods failed suite-Clear_Trip_Project_Suite"> (show)</a> <!-- show-methods failed suite-Clear_Trip_Project_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Clear_Trip_Project_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Clear_Trip_Project_Suite" title="com.practice.NegativeTestcases.InvalidScenarioTest" hash-for-method="invalidSearchFromCityTest">invalidSearchFromCityTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Clear_Trip_Project_Suite" title="com.practice.NegativeTestcases.InvalidScenarioTest" hash-for-method="invalidSearchTest(Mumbai, London)">invalidSearchTest(Mumbai, London)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Clear_Trip_Project_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Clear_Trip_Project_Suite" class="hide-methods passed suite-Clear_Trip_Project_Suite"> (hide)</a> <!-- hide-methods passed suite-Clear_Trip_Project_Suite -->
+                      <a href="#" panel-name="suite-Clear_Trip_Project_Suite" class="show-methods passed suite-Clear_Trip_Project_Suite"> (show)</a> <!-- show-methods passed suite-Clear_Trip_Project_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Clear_Trip_Project_Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Clear_Trip_Project_Suite" title="com.practice.PositiveTestcases.ValidScenarioTest" hash-for-method="clickSearchTest">clickSearchTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Clear_Trip_Project_Suite" title="com.practice.NegativeTestcases.InvalidScenarioTest" hash-for-method="invalidSearchselectDateTest">invalidSearchselectDateTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Clear_Trip_Project_Suite" title="com.practice.NegativeTestcases.InvalidScenarioTest" hash-for-method="invalidSearchseletOneWayTest">invalidSearchseletOneWayTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Clear_Trip_Project_Suite" title="com.practice.PositiveTestcases.ValidScenarioTest" hash-for-method="selectDateTest">selectDateTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Clear_Trip_Project_Suite" title="com.practice.PositiveTestcases.ValidScenarioTest" hash-for-method="selectFromAndTOCityTest(Mumbai, New Delhi)">selectFromAndTOCityTest(Mumbai, New Delhi)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Clear_Trip_Project_Suite" title="com.practice.PositiveTestcases.ValidScenarioTest" hash-for-method="seletOneWayTest">seletOneWayTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Clear_Trip_Project_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Clear_Trip_Project_Suite" class="panel Clear_Trip_Project_Suite">
+          <div class="suite-Clear_Trip_Project_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.practice.NegativeTestcases.InvalidScenarioTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidSearchFromCityTest">
+                  </a> <!-- invalidSearchFromCityTest -->
+                  <span class="method-name">invalidSearchFromCityTest</span>
+                  <div class="stack-trace">org.testng.internal.reflect.MethodMatcherException: 
+Data provider mismatch
+Method: invalidSearchFromCityTest([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) 12556.0]
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidSearchTest(Mumbai, London)">
+                  </a> <!-- invalidSearchTest(Mumbai, London) -->
+                  <span class="method-name">invalidSearchTest</span>
+                  <span class="parameters">(Mumbai, London)</span>
+                  <div class="stack-trace">org.openqa.selenium.InvalidElementStateException: invalid element state
+  (Session info: chrome=85.0.4183.83)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;vishakha-Inspiron-3542&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-117-generic&apos;, java.version: &apos;1.8.0_265&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /tmp/.com.google.Chrome.w8BUDN}, goog:chromeOptions: {debuggerAddress: localhost:44311}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e330f2b7090057f4d3c9909776441cde
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:124)
+	at com.practice.bases.BaseClass.clear(BaseClass.java:209)
+	at com.practice.NegativeTestcases.InvalidScenarioTest.invalidSearchTest(InvalidScenarioTest.java:30)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Clear_Trip_Project_Suite-class-failed -->
+          <div class="suite-Clear_Trip_Project_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.practice.NegativeTestcases.InvalidScenarioTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidSearchselectDateTest">
+                  </a> <!-- invalidSearchselectDateTest -->
+                  <span class="method-name">invalidSearchselectDateTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidSearchseletOneWayTest">
+                  </a> <!-- invalidSearchseletOneWayTest -->
+                  <span class="method-name">invalidSearchseletOneWayTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Clear_Trip_Project_Suite-class-passed -->
+          <div class="suite-Clear_Trip_Project_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.practice.PositiveTestcases.ValidScenarioTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickSearchTest">
+                  </a> <!-- clickSearchTest -->
+                  <span class="method-name">clickSearchTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectDateTest">
+                  </a> <!-- selectDateTest -->
+                  <span class="method-name">selectDateTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectFromAndTOCityTest(Mumbai, New Delhi)">
+                  </a> <!-- selectFromAndTOCityTest(Mumbai, New Delhi) -->
+                  <span class="method-name">selectFromAndTOCityTest</span>
+                  <span class="parameters">(Mumbai, New Delhi)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="seletOneWayTest">
+                  </a> <!-- seletOneWayTest -->
+                  <span class="method-name">seletOneWayTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Clear_Trip_Project_Suite-class-passed -->
+        </div> <!-- panel Clear_Trip_Project_Suite -->
+        <div panel-name="test-xml-Clear_Trip_Project_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/home/vishakha/eclipse-workspace/ClearTrip/src/test/resources/runner/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Clear Trip Project Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.JUnitXMLReporter&quot;/&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.HTMLReporter&quot;/&gt;
+    &lt;listener class-name=&quot;com.practice.listener.CustomListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Search page(valid) Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.practice.PositiveTestcases.ValidScenarioTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Search page(valid) Test --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Search page(Invaid) Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.practice.NegativeTestcases.InvalidScenarioTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Search page(Invaid) Test --&gt;
+&lt;/suite&gt; &lt;!-- Clear Trip Project Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Clear_Trip_Project_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Clear Trip Project Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Search page(valid) Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Search page(Invaid) Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Clear_Trip_Project_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Clear Trip Project Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Clear_Trip_Project_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Clear Trip Project Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Clear_Trip_Project_Suite');
+function tableData_Clear_Trip_Project_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(8);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'clickSearchTest')
+data.setCell(0, 2, 'com.practice.PositiveTestcases.ValidScenarioTest')
+data.setCell(0, 3, 13347);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'selectFromAndTOCityTest')
+data.setCell(1, 2, 'com.practice.PositiveTestcases.ValidScenarioTest')
+data.setCell(1, 3, 5551);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'invalidSearchTest')
+data.setCell(2, 2, 'com.practice.NegativeTestcases.InvalidScenarioTest')
+data.setCell(2, 3, 3246);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'selectDateTest')
+data.setCell(3, 2, 'com.practice.PositiveTestcases.ValidScenarioTest')
+data.setCell(3, 3, 2559);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'invalidSearchselectDateTest')
+data.setCell(4, 2, 'com.practice.NegativeTestcases.InvalidScenarioTest')
+data.setCell(4, 3, 2391);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'seletOneWayTest')
+data.setCell(5, 2, 'com.practice.PositiveTestcases.ValidScenarioTest')
+data.setCell(5, 3, 2133);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'invalidSearchseletOneWayTest')
+data.setCell(6, 2, 'com.practice.NegativeTestcases.InvalidScenarioTest')
+data.setCell(6, 3, 2133);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'invalidSearchFromCityTest')
+data.setCell(7, 2, 'com.practice.NegativeTestcases.InvalidScenarioTest')
+data.setCell(7, 3, 23);
+window.suiteTableData['Clear_Trip_Project_Suite']= { tableData: data, tableDiv: 'times-div-Clear_Trip_Project_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 31 seconds</span>
+              <div id="times-div-Clear_Trip_Project_Suite">
+              </div> <!-- times-div-Clear_Trip_Project_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Clear_Trip_Project_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Clear Trip Project Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">seletOneWayTest</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><a target="_blank" href =Fri_Sep_18_21_55_04_IST_2020.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><a href =Fri_Sep_18_21_55_04_IST_2020.jpg><img height=100 width=100 src=Fri_Sep_18_21_55_04_IST_2020.jpg></img></a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">clickSearchTest</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><a target="_blank" href =Fri_Sep_18_21_55_20_IST_2020.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><a href =Fri_Sep_18_21_55_20_IST_2020.jpg><img height=100 width=100 src=Fri_Sep_18_21_55_20_IST_2020.jpg></img></a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">selectFromAndTOCityTest(Mumbai, New Delhi)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><a target="_blank" href =Fri_Sep_18_21_55_01_IST_2020.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><a href =Fri_Sep_18_21_55_01_IST_2020.jpg><img height=100 width=100 src=Fri_Sep_18_21_55_01_IST_2020.jpg></img></a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">selectDateTest</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><a target="_blank" href =Fri_Sep_18_21_55_07_IST_2020.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><a href =Fri_Sep_18_21_55_07_IST_2020.jpg><img height=100 width=100 src=Fri_Sep_18_21_55_07_IST_2020.jpg></img></a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">invalidSearchselectDateTest</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><a target="_blank" href =Fri_Sep_18_21_55_36_IST_2020.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><a href =Fri_Sep_18_21_55_36_IST_2020.jpg><img height=100 width=100 src=Fri_Sep_18_21_55_36_IST_2020.jpg></img></a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">invalidSearchseletOneWayTest</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><a target="_blank" href =Fri_Sep_18_21_55_33_IST_2020.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><a href =Fri_Sep_18_21_55_33_IST_2020.jpg><img height=100 width=100 src=Fri_Sep_18_21_55_33_IST_2020.jpg></img></a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">invalidSearchTest(Mumbai, London)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><a target="_blank" href =Fri_Sep_18_21_55_31_IST_2020.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><a href =Fri_Sep_18_21_55_31_IST_2020.jpg><img height=100 width=100 src=Fri_Sep_18_21_55_31_IST_2020.jpg></img></a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Clear_Trip_Project_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Clear_Trip_Project_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.practice.NegativeTestcases.InvalidScenarioTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.practice.PositiveTestcases.ValidScenarioTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">selectFromAndTOCityTest(Mumbai, New Delhi)</span>
+                <span class="method-start">12888 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">seletOneWayTest</span>
+                <span class="method-start">19096 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">selectDateTest</span>
+                <span class="method-start">21509 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickSearchTest</span>
+                <span class="method-start">24362 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.practice.NegativeTestcases.InvalidScenarioTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">back</span>
+                <span class="method-start">37982 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">invalidSearchTest(Mumbai, London)</span>
+                <span class="method-start">45398 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidSearchseletOneWayTest</span>
+                <span class="method-start">48890 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidSearchselectDateTest</span>
+                <span class="method-start">51269 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-suite after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">53911 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
